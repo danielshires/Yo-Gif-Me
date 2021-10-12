@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Reset -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- css.gg -->
+	<link href='https://css.gg/css' rel='stylesheet'>
+</head>
+
+
+<body data-barba="wrapper">
+
+	<header class="container-fluid position-fixed d-flex align-items-center p-4 p-md-5 w-100 justify-content-between">
+		<div class="brand">
+			<a href="/" data-hover>Yo! Gif</a>
+		</div>
+		<div class="search d-flex flex-column">
+			<div class="search-container d-flex">
+				<input class="search-input full-area" type="search" placeholder="Search for gifs..."
+					aria-label="Search gifs..." data-hover>
+				<button class="search-icon" type="submit" data-hover><i class="gg-search"></i></button>
+			</div>
+			<div class="search-messages position-absolute">
+				<div class="error"><i class="gg-danger"></i>Try searching more than 2 letters</div>
+			</div>
+		</div>
+		<nav>
+			<div class="menu-item more">
+				<a class="menu-link" data-hover>More</a>
+			</div>
+			<div class="info-panel">
+				<div class="brand-info">
+					<div class="brand"><a href="/" data-hover>Yo! Gif</a></div>
+					<div class="menu-item less" data-hover><a class="menu-link">Less</a></div>
+				</div>
+				<div class="about">
+					<p>This site was developed by <a href="http://www.danielshires.com" target="_blank" data-hover
+							class="external-link">Daniel Shires</a> as part of his course studying APIs and Ajax for
+						Super-Hi. The code is a mix of OG coursework and additional design and interactions using custom
+						Vanilla JS.</p>
+					<p>✌️</p>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<main class="d-flex align-items-center justify-content-center flex-column" data-barba="container"
+		data-barba-namespace="home">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="videos full-area">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="intro-text">
+					<h1>A simple search platform for Gif images.</h1>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<div class="cursor">
+		<div></div>
+	</div>
+
+
+	<footer>
+		<aside>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 justify-content-center position-relative tipGrid">
+						<div class="protip text-center">
+							<h6>Pro Tip</h6>
+							<span class="search-hint">Hit enter to search</span>
+						</div>
+						<div class="clear-search text-center">
+							<img src="./img/close-o.svg" class="close-icon" data-hover>
+							<!-- <span class="">Clear search</span> -->
+						</div>
+						<div class="giphydev">
+							<img src="./img/powered-by-giphy.png" height="48px">
+						</div>
+						<div class="indicators text-center">
+							<span class="spinner"><span class="spinner-text">Loading</span><img class="spinner"
+									src="https://samherbert.net/svg-loaders/svg-loaders/oval.svg"></span>
+						</div>
+					</div>
+				</div>
+		</aside>
+	</footer>
+
+	<script src="js/giphy.js"></script>
+	<script src="js/barba-css.js"></script>
+	<script src="js/barba.js"></script>
+	<script src="js/barba-scripts.js"></script>
+	<script src="js/mouse.js"></script>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
