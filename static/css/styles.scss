@@ -229,7 +229,7 @@ header .menu-link {
 
 nav .info-panel {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-color: rgba(10, 10, 10, 1);
     position: absolute;
     top: 0;
@@ -237,11 +237,13 @@ nav .info-panel {
     z-index: 10;
     display: grid;
     padding: 3em;
-    transform: translateY(-30vh);
+    transform: translateY(-40vh);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
+        height: 40vh;
+        transform: translateY(-40vh);
         width: 100%;
         padding: 1.5em
     }
@@ -275,7 +277,7 @@ nav .info-panel {
 
 @keyframes menuOverlay {
     0% {
-        transform: translateY(-30vh);
+        transform: translateY(-40vh);
         opacity: 0;
     }
 
@@ -292,7 +294,7 @@ nav .info-panel {
     }
 
     100% {
-        transform: translateY(-30vh);
+        transform: translateY(-40vh);
         opacity: 0;
     }
 }
