@@ -1,0 +1,22 @@
+{
+  "name": "yo-gif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielshires/Yo-Gif-Me.git"
+  },
+  "author": "Daniel Shires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielshires/Yo-Gif-Me/issues"
+  },
+  "homepage": "https://github.com/danielshires/Yo-Gif-Me#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
